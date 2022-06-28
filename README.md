@@ -13,5 +13,5 @@ Some great resources I have used along the way:
 
 ```
 npm install
-npm start
+npm run start
 ```
