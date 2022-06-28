@@ -113,7 +113,7 @@ function App() {
           depth={depth}
         />
         <main className="w-screen h-screen min-h-screen pt-44 md:pt-8">
-          <div className="w-full h-full flex flex-col justify-center items-center space-x-8">
+          <div className="w-full h-full flex flex-col justify-center items-center">
             {playGame && (
               <Board
                 aiPlayer={aiPlayer}
@@ -126,7 +126,7 @@ function App() {
             )}
             {!playGame && <DummyBoard onClick={handleNewGame} />}
             {gameState && (
-              <div className="absolute select-none font-medium w-44 p-2 text-center text-2xl text-gray-700 bg-gray-100 rounded-lg shadow-lg">
+              <div className="absolute bottom-12 select-none font-medium w-64 p-2 text-center text-2xl text-gray-700 bg-gray-100 rounded-lg shadow-lg">
                 {gameState}
                 <span ref={resetRef} className="block text-sm">
                   Resetting in 3...
