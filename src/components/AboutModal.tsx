@@ -26,7 +26,7 @@ export const AboutModal = (props: { hideModalHandler: () => void }) => {
             A basic implementation of the{" "}
             <Link
               link="https://en.wikipedia.org/wiki/Minimax"
-              text="minimax alorithm"
+              text="minimax algorithm"
             />{" "}
             with alpha beta pruning for optimization and (somewhat hastily)
             wrapped in a React app.

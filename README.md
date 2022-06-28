@@ -1,23 +1,17 @@
-# Minimax Alpha Beta Typescript
+# Minimax Alpha Beta Typescript (tic tac toe)
 
-## Available Scripts
+A basic implementation of the [minimax algorithm](https://en.wikipedia.org/wiki/Minimax) with alpha beta pruning for optimization and (somewhat hastily) wrapped in a React app.
 
-In the project directory, you can run:
+The code generates a tree of all possible tic tac toe positions which are scored from 1 to -1. The minimax function then loops through the positions and returns the best value, adjusting the score in relation to the current depth.
 
-### `npm start`
+Some great resources I have used along the way:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Daniel Shiffman's [implementation](https://www.youtube.com/watch?v=trKjYdBASyQ).
+- Sebastian Lague's excellent and succint in-depth [explanation](https://www.youtube.com/watch?v=l-hh51ncgDI).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Install and run locally
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+npm start
+```
