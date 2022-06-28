@@ -37,6 +37,13 @@ export const AboutModal = (props: { hideModalHandler: () => void }) => {
             and returns the best value, adjusting the score in relation to the
             current depth.
           </p>
+          <p>
+            Check the code on{" "}
+            <Link
+              link="https://github.com/ABukSwienty/minimax-alpha-beta-typescript"
+              text="GitHub"
+            />
+          </p>
         </section>
         <section className="py-4">
           <p>Some great resources I have used along the way:</p>
