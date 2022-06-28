@@ -9,6 +9,10 @@ Some great resources I have used along the way:
 - Daniel Shiffman's [implementation](https://www.youtube.com/watch?v=trKjYdBASyQ).
 - Sebastian Lague's excellent and succint in-depth [explanation](https://www.youtube.com/watch?v=l-hh51ncgDI).
 
+## Demo
+
+[Demo](https://abukswienty.github.io/minimax-alpha-beta-typescript/)
+
 ## Install and run locally
 
 ```
