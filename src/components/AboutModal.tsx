@@ -10,12 +10,12 @@ import { Link } from "./Link";
 
 export const AboutModal = (props: { hideModalHandler: () => void }) => {
   return (
-    <div className="fixed w-screen h-screen z-10 flex items-center justify-center">
+    <div className="fixed w-screen h-screen z-[9999] flex items-center justify-center ">
       <div
         onClick={props.hideModalHandler}
         className="fixed bg-gray-900 bg-opacity-20 backdrop-blur-sm w-full h-full"
       ></div>
-      <div className="fixed w-4/5 md:w-2/5 h-3/5 bg-gray-50 px-14 py-10 rounded-lg overflow-scroll drop-shadow-2xl shadow-xl text-gray-500">
+      <div className="fixed w-4/5 md:w-2/5 h-3/5 bg-gray-50 px-14 py-10 rounded-lg overflow-scroll drop-shadow-2xl shadow-xl text-gray-500 ">
         <h1 className="text-2xl ">
           Alpha Beta Minimax Algorithm for{" "}
           <span className="text-blue-700">Typescript</span>

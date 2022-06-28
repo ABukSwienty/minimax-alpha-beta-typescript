@@ -112,7 +112,7 @@ function App() {
           stats={stats}
           depth={depth}
         />
-        <main className="w-screen h-screen min-h-screen pt-8">
+        <main className="w-screen h-screen min-h-screen pt-44 md:pt-8">
           <div className="w-full h-full flex flex-col justify-center items-center space-x-8">
             {playGame && (
               <Board

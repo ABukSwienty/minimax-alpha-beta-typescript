@@ -29,25 +29,22 @@ export const Header = (props: {
       <h1 className="md:hidden text-center w-full">
         Alpha Beta Minimax Algorithm
       </h1>
-      <div className="w-full md:w-1/3 h-full flex items-center justify-center md:justify-start space-x-4">
-        <button
-          onClick={showModal}
-          className="h-full p-2 rounded-lg hover:bg-gray-100 hover:text-gray-900 text-gray-700 flex items-center text-sm 4k:text-2xl font-medium"
-        >
-          <Icon icon="info" />
-          <span className="pl-4 lg:pl-8">About</span>
-        </button>
-        <button
-          onClick={toggleAi}
-          className="h-full p-2 rounded-lg hover:bg-gray-100 hover:text-gray-900 text-gray-700 flex items-center text-sm 4k:text-2xl font-medium"
-        >
-          <Icon icon="computer" />
-          <span className="pl-4 lg:pl-8">{`<${aiPlayer}>`}</span>
-        </button>
-      </div>
 
-      <ul className="text-sm font-medium h-full flex items-center justify-center w-full md:w-1/3">
-        <NavListItem>
+      <ul className="text-sm font-medium h-full grid grid-cols-2 place md:grid-cols-none gap-4 md:gap-0 md:flex md:items-center md:justify-center w-full md:w-1/2">
+        <NavListItem onClick={showModal}>
+          <Icon icon="info" />
+          <span>About</span>
+        </NavListItem>
+        <NavListItem onClick={toggleAi}>
+          <Icon icon="computer" />
+          <span>
+            {'"'}
+            {aiPlayer}
+            {'"'}
+          </span>
+        </NavListItem>
+
+        <NavListItem className="">
           <Icon icon="timer" />
           <span className="">{stats.duration}ms</span>
           <HoverNav
@@ -101,7 +98,7 @@ export const Header = (props: {
         </NavListItem>
       </ul>
 
-      <h1 className="invisible md:visible w-1/3 h-full font-medium text-lg  md:text-1xl lg:text-2xl 4k:text-4xl flex items-center justify-center md:justify-end text-gray-700">
+      <h1 className="invisible md:visible w-1/2 h-full font-medium text-lg  md:text-1xl lg:text-2xl 4k:text-4xl flex items-center justify-center md:justify-end text-gray-700">
         Alpha Beta Minimax Algorithm
       </h1>
     </header>
